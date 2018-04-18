@@ -43,11 +43,11 @@
 		document.getElementById("output_item").innerHTML = "";
 		var o_name = "";
 		alert("2");
-		    //$.get("https://script.google.com/macros/s/AKfycbwgsfbPxfQJp3wTdactMjIxTls3oZpreytuwoOuHZ-FjsiwE3M/exec", {
 		    $.get("https://script.google.com/macros/s/AKfycbwgsfbPxfQJp3wTdactMjIxTls3oZpreytuwoOuHZ-FjsiwE3M/exec", {
-
+		    
 				"number": document.getElementById("txt_numberInput").value,
-							"status": document.getElementById("chk_status").checked
+				"status": document.getElementById("chk_status").checked
+			    
 			    },
 		    function (data) {
 				alert("3");
