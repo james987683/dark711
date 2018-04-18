@@ -50,19 +50,19 @@
 							"status": document.getElementById("chk_status").checked
 			    },
 		    function (data) {
-
-						O_name = "<table style='border:3px #cccccc solid;' cellpadding='10' border='1'>" + 
-								 "   <tr>" +
-								 "     <td>姓名</td>" +
-								 "     <td>商品名稱</td>" +
-								 "     <td>詳細資料</td>" +
-								 "     <td>數量</td>" +
-								 "     <td>金額</td>" +
-								 "     <td>商品狀態</td>" +
-								 "   </tr>" +
-								  data +
-								 "</table>";
-						document.getElementById("output_item").innerHTML = O_name;
+				alert("2");
+				O_name = "<table style='border:3px #cccccc solid;' cellpadding='10' border='1'>" + 
+						 "   <tr>" +
+						 "     <td>姓名</td>" +
+						 "     <td>商品名稱</td>" +
+						 "     <td>詳細資料</td>" +
+						 "     <td>數量</td>" +
+						 "     <td>金額</td>" +
+						 "     <td>商品狀態</td>" +
+						 "   </tr>" +
+						  data +
+						 "</table>";
+				document.getElementById("output_item").innerHTML = O_name;
 		    });
 		
         }
