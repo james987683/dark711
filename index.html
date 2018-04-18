@@ -26,31 +26,31 @@
 			</td>
 		</tr>
 	</table>
-	testtest
+	
 	<p>---------------------------------------------------------------------------------------------------</p>
 	
 	<div id="output_item"></div>
     
-
+testtest
     <script type="text/javascript">
-		function btn_clear(){
-			document.getElementById("output_item").innerHTML = "";
-			document.getElementById("txt_numberInput").value = ""
-		}
+	function btn_clear(){
+		document.getElementById("output_item").innerHTML = "";
+		document.getElementById("txt_numberInput").value = ""
+	}
 	
         function btn_Search(){
 			
-			document.getElementById("output_item").innerHTML = "";
-			var o_name = "";
-			
-            //$.get("https://script.google.com/macros/s/AKfycbwgsfbPxfQJp3wTdactMjIxTls3oZpreytuwoOuHZ-FjsiwE3M/exec", {
-            $.get("https://script.google.com/macros/s/AKfycbwgsfbPxfQJp3wTdactMjIxTls3oZpreytuwoOuHZ-FjsiwE3M/exec", {
-		    
-                        "number": document.getElementById("txt_numberInput").value,
-						"status": document.getElementById("chk_status").checked
-                    },
-                    function (data) {
-						
+		document.getElementById("output_item").innerHTML = "";
+		var o_name = "";
+
+		    //$.get("https://script.google.com/macros/s/AKfycbwgsfbPxfQJp3wTdactMjIxTls3oZpreytuwoOuHZ-FjsiwE3M/exec", {
+		    $.get("https://script.google.com/macros/s/AKfycbwgsfbPxfQJp3wTdactMjIxTls3oZpreytuwoOuHZ-FjsiwE3M/exec", {
+
+				"number": document.getElementById("txt_numberInput").value,
+							"status": document.getElementById("chk_status").checked
+			    },
+		    function (data) {
+
 						O_name = "<table style='border:3px #cccccc solid;' cellpadding='10' border='1'>" + 
 								 "   <tr>" +
 								 "     <td>姓名</td>" +
@@ -63,7 +63,7 @@
 								  data +
 								 "</table>";
 						document.getElementById("output_item").innerHTML = O_name;
-                    });
+		    });
         }
     </script>
 </body>
